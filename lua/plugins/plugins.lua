@@ -41,4 +41,10 @@ return {
   },
 
   { "norcalli/nvim-colorizer.lua" },
+
+  {
+    -- coc-astro / coc-prettier
+    "neoclide/coc.nvim",
+    branch = "release",
+  },
 }
