@@ -13,7 +13,6 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
 
     -- Disabled
-    { "nvim-lualine/lualine.nvim", enabled = false },
     { "rafamadriz/friendly-snippets", enabled = false },
 
     -- import any extras modules here

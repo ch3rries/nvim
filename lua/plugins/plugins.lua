@@ -28,7 +28,10 @@ return {
   },
 
   -- Oil
-  { "stevearc/oil.nvim" },
+  {
+    "stevearc/oil.nvim",
+    vim.keymap.set("n", "<leader>n", "<cmd>Oil<cr>"),
+  },
 
   -- Grapple
   {
@@ -36,4 +39,6 @@ return {
     vim.keymap.set("n", "<leader>m", "<cmd>Grapple toggle<cr>"),
     vim.keymap.set("n", "<leader>M", "<cmd>Grapple open_tags<cr>"),
   },
+
+  { "norcalli/nvim-colorizer.lua" },
 }
