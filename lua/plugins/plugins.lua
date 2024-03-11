@@ -48,4 +48,8 @@ return {
     "neoclide/coc.nvim",
     branch = "release",
   },
+
+  {
+    "mpas/marp-nvim",
+  },
 }
