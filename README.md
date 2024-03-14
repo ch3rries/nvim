@@ -25,4 +25,4 @@ Clone this repository into `~/.config/nvim`
 }
 ```
 
-Delete `*.so` files in `nvim-data`
+Delete `*.so` files in `nvim-data/lazy/nvim-treesitter/parser`
