@@ -1,11 +1,11 @@
 return {
   -- Gruvbox Colorscheme
-  { "morhetz/gruvbox" },
+  { "sainnhe/gruvbox-material" },
 
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "gruvbox-material",
     },
   },
 
@@ -41,11 +41,34 @@ return {
     vim.keymap.set("n", "<leader>M", "<cmd>Grapple open_tags<cr>"),
   },
 
-  -- Toggleterm
+  -- Formatting config
   {
-    "akinsho/toggleterm.nvim",
-    vim.keymap.set("n", "<leader>ct", "<cmd>terminal<cr>"),
+    "stevearc/conform.nvim",
+    optional = true,
+    opts = {
+      formatters_by_ft = {
+        ["javascript"] = { "prettier" },
+        ["javascriptreact"] = { "prettier" },
+        ["typescript"] = { "prettier" },
+        ["typescriptreact"] = { "prettier" },
+        ["vue"] = { "prettier" },
+        ["css"] = { "prettier" },
+        ["astro"] = { "prettier-plugin-astro" },
+        ["scss"] = { "prettier" },
+        ["less"] = { "prettier" },
+        ["html"] = { "prettier" },
+        ["json"] = { "prettier" },
+        ["jsonc"] = { "prettier" },
+        ["yaml"] = { "prettier" },
+        ["markdown"] = { "prettier" },
+        ["markdown.mdx"] = { "prettier" },
+        ["graphql"] = { "prettier" },
+        ["handlebars"] = { "prettier" },
+      },
+    },
   },
 
-  { "kdheepak/lazygit.nvim" },
+  {
+    "jbyuki/nabla.nvim",
+  },
 }

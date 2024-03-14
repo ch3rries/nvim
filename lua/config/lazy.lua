@@ -11,16 +11,11 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-
     -- Disabled
     { "rafamadriz/friendly-snippets", enabled = false },
-    { "hrsh7th/cmp-buffer", enabled = false },
 
-    -- import any extras modules here
-    -- { import = "lazyvim.plugins.extras.lang.typescript" },
-    -- { import = "lazyvim.plugins.extras.lang.json" },
-    -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
-    -- import/override with your plugins
+    { import = "lazyvim.plugins.extras.lsp.none-ls", enabled = true },
+
     { import = "plugins" },
   },
   defaults = {
@@ -32,16 +27,11 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
   checker = { enabled = true }, -- automaticsiteNameally check for plugin updates
   performance = {
     rtp = {
-      -- disable some rtp plugins
       disabled_plugins = {
         "gzip",
-        -- "matchit",
-        -- "matchparen",
-        -- "netrwPlugin",
         "tarPlugin",
         "tohtml",
         "tutor",
