@@ -5,3 +5,5 @@ require("oil").setup()
 if vim.g.neovide then
   vim.o.guifont = "FantasqueSansM Nerd Font:h14"
 end
+
+vim.o.shell = "powershell.exe"

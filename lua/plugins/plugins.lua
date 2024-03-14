@@ -1,5 +1,5 @@
 return {
-  -- Rose Pine Colorscheme
+  -- Gruvbox Colorscheme
   { "morhetz/gruvbox" },
 
   {
@@ -41,15 +41,11 @@ return {
     vim.keymap.set("n", "<leader>M", "<cmd>Grapple open_tags<cr>"),
   },
 
-  { "norcalli/nvim-colorizer.lua" },
-
+  -- Toggleterm
   {
-    -- coc-astro / coc-prettier
-    "neoclide/coc.nvim",
-    branch = "release",
+    "akinsho/toggleterm.nvim",
+    vim.keymap.set("n", "<leader>ct", "<cmd>terminal<cr>"),
   },
 
-  {
-    "mpas/marp-nvim",
-  },
+  { "kdheepak/lazygit.nvim" },
 }
