@@ -31,14 +31,14 @@ return {
   -- Oil
   {
     "stevearc/oil.nvim",
-    vim.keymap.set("n", "<leader>n", "<cmd>Oil<cr>"),
+    vim.keymap.set("n", "<leader>n", "<cmd>Oil<cr>", { desc = "Open Oil" }),
   },
 
   -- Grapple
   {
     "cbochs/grapple.nvim",
-    vim.keymap.set("n", "<leader>m", "<cmd>Grapple toggle<cr>"),
-    vim.keymap.set("n", "<leader>M", "<cmd>Grapple open_tags<cr>"),
+    vim.keymap.set("n", "<leader>m", "<cmd>Grapple toggle<cr>", { desc = "Toggle Grapple" }),
+    vim.keymap.set("n", "<leader>M", "<cmd>Grapple open_tags<cr>", { desc = "Open Tags" }),
   },
 
   -- Formatting config
@@ -70,5 +70,6 @@ return {
 
   {
     "jbyuki/nabla.nvim",
+    vim.keymap.set("n", "<leader>p", "<cmd>:lua require('nabla').popup()<cr>", { desc = "Nabla Preview" }),
   },
 }

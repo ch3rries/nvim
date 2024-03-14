@@ -9,3 +9,20 @@ Clone this repository into `C:\Users\%USERNAME%\AppData\Local\nvim`
 
 ## Linux
 Clone this repository into `~/.config/nvim`
+
+# Known Errors in this Config
+```
+{
+  cmd = "cmd",
+  opts = {
+    args = { "/C", "move", "/Y", "parser.so", "C:/Users/**/AppData/Local/nvim-data/lazy/nvim-treesitter\\parser\\markdown.so" },
+    cwd = "C:\\Users\\**\\AppData\\Local\\nvim-data\\tree-sitter-markdown\\tree-sitter-markdown",
+    stdio = {
+      [2] = <userdata 1>,
+      [3] = <userdata 2>
+    }
+  }
+}
+```
+
+Delete `*.so` files in `nvim-data`
