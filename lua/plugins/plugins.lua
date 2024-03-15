@@ -41,33 +41,6 @@ return {
     vim.keymap.set("n", "<leader>M", "<cmd>Grapple open_tags<cr>", { desc = "Open Tags" }),
   },
 
-  -- Formatting config
-  {
-    "stevearc/conform.nvim",
-    optional = true,
-    opts = {
-      formatters_by_ft = {
-        ["javascript"] = { "prettier" },
-        ["javascriptreact"] = { "prettier" },
-        ["typescript"] = { "prettier" },
-        ["typescriptreact"] = { "prettier" },
-        ["vue"] = { "prettier" },
-        ["css"] = { "prettier" },
-        ["astro"] = { "prettier-plugin-astro" },
-        ["scss"] = { "prettier" },
-        ["less"] = { "prettier" },
-        ["html"] = { "prettier" },
-        ["json"] = { "prettier" },
-        ["jsonc"] = { "prettier" },
-        ["yaml"] = { "prettier" },
-        ["markdown"] = { "prettier" },
-        ["markdown.mdx"] = { "prettier" },
-        ["graphql"] = { "prettier" },
-        ["handlebars"] = { "prettier" },
-      },
-    },
-  },
-
   {
     "jbyuki/nabla.nvim",
     vim.keymap.set("n", "<leader>p", "<cmd>:lua require('nabla').popup()<cr>", { desc = "Nabla Preview" }),

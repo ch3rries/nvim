@@ -16,7 +16,7 @@ Clone this repository into `~/.config/nvim`
   cmd = "cmd",
   opts = {
     args = { "/C", "move", "/Y", "parser.so", "C:/Users/**/AppData/Local/nvim-data/lazy/nvim-treesitter\\parser\\markdown.so" },
-    cwd = "C:\\Users\\**\\AppData\\Local\\nvim-data\\tree-sitter-markdown\\tree-sitter-markdown",
+    cwd = "c:\\Users\\**\\AppData\\Local\\nvim-data\\tree-sitter-markdown\\tree-sitter-markdown",
     stdio = {
       [2] = <userdata 1>,
       [3] = <userdata 2>
@@ -24,5 +24,4 @@ Clone this repository into `~/.config/nvim`
   }
 }
 ```
-
 Delete `*.so` files in `nvim-data/lazy/nvim-treesitter/parser`
