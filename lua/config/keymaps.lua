@@ -5,7 +5,6 @@
 
 -- This file is automatically loaded by lazyvim.config.init
 local map = vim.keymap.set
-local del = vim.keymap.del
 
 -- Center half-page jump
 map("n", "<C-u>", "<C-u>zz", { remap = true })
