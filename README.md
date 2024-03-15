@@ -11,7 +11,7 @@ Clone this repository into `C:\Users\%USERNAME%\AppData\Local\nvim`
 Clone this repository into `~/.config/nvim`
 
 # Known Errors in this Config
-```
+```lua
 {
   cmd = "cmd",
   opts = {
