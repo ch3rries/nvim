@@ -19,6 +19,7 @@ require("lazy").setup({
     -- Disabled
     { "rafamadriz/friendly-snippets", enabled = false },
     { "folke/flash.nvim", enabled = false },
+    { "hrsh7th/cmp-buffer", enabled = false },
 
     { import = "lazyvim.plugins.extras.lsp.none-ls", enabled = true },
 

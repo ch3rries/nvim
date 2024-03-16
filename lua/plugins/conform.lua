@@ -21,6 +21,7 @@ return {
         ["markdown.mdx"] = { "prettier" },
         ["graphql"] = { "prettier" },
         ["handlebars"] = { "prettier" },
+        ["python"] = { "ast-grep" },
       },
     },
   },
