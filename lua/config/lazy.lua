@@ -18,6 +18,7 @@ require("lazy").setup({
 
     -- Disabled
     { "rafamadriz/friendly-snippets", enabled = false },
+    { "akinsho/bufferline.nvim", enabled = false },
     { "folke/flash.nvim", enabled = false },
     { "hrsh7th/cmp-buffer", enabled = false },
 

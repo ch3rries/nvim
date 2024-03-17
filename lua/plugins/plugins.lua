@@ -44,5 +44,6 @@ return {
   {
     "jbyuki/nabla.nvim",
     vim.keymap.set("n", "<leader>p", "<cmd>:lua require('nabla').popup()<cr>", { desc = "Nabla Preview" }),
+    ft = { "markdown", "txt" },
   },
 }
