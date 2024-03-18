@@ -1,14 +1,4 @@
 return {
-  -- Gruvbox Colorscheme
-  { "sainnhe/gruvbox-material" },
-
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "gruvbox-material",
-    },
-  },
-
   -- Flowtime
   {
     "donbignose/flowtime.nvim",
