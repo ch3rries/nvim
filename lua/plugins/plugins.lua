@@ -38,6 +38,7 @@ return {
   },
   {
     "akinsho/toggleterm.nvim",
+    vim.keymap.set("n", "<leader>t", "<cmd>:ToggleTerm<cr>", { desc = "Open terminal" }),
     config = true,
   },
 }
